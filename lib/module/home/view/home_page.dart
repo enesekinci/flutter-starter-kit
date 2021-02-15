@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutterstarterkit/core/view/base_view.dart';
+import 'package:flutterstarterkit/module/drawer/view/drawer_page.dart';
 import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,7 +10,7 @@ class HomePage extends StatelessWidget {
     return BaseView(onPageBuilder: (context, controller, authController, mainController) {
       return Scaffold(
         appBar: AppBar(),
-        drawer: Drawer(),
+        drawer: DrawerMenu(),
         body: Center(
           child: Container(
               child: Column(
