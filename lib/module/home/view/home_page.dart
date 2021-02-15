@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                   Get.offAndToNamed("/login");
                 },
                 child: Text(
-                  "Çıkış Yap",
+                  "Logout",
                   style: TextStyle(
                     color: Colors.white,
                   ),

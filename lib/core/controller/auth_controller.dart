@@ -7,8 +7,11 @@ import '../repository/auth_repository.dart';
 import 'base_controller.dart';
 
 class AuthController extends BaseController {
-  static AuthController _instance = AuthController._init();
-  static AuthController get instance => _instance;
+  static AuthController _instance;
+  static AuthController get instance {
+    if (_instance == null) _instance = AuthController._init();
+    return _instance;
+  }
 
   final repository = AuthRepository.instance;
   Rx<User> _authUser;

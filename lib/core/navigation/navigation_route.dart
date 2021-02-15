@@ -5,7 +5,10 @@ import '../../module/main/view/main_page.dart';
 
 class NavigationRoute {
   static NavigationRoute _instance = NavigationRoute._init();
-  static NavigationRoute get instance => _instance;
+  static NavigationRoute get instance {
+    if (_instance == null) _instance = NavigationRoute._init();
+    return _instance;
+  }
 
   NavigationRoute._init();
 

@@ -5,8 +5,11 @@ import '../theme/app_theme.dart';
 import 'base_controller.dart';
 
 class MainController extends BaseController {
-  static MainController _instance = MainController._init();
-  static MainController get instance => _instance;
+  static MainController _instance;
+  static MainController get instance {
+    if (_instance == null) _instance = MainController._init();
+    return _instance;
+  }
 
   MainController._init();
 

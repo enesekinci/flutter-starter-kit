@@ -4,8 +4,11 @@ import 'package:get/get.dart';
 import '../../../core/controller/base_controller.dart';
 
 class DrawerMenuController extends BaseController {
-  static DrawerMenuController _instance = DrawerMenuController._init();
-  static DrawerMenuController get instance => _instance;
+  static DrawerMenuController _instance;
+  static DrawerMenuController get instance {
+    if (_instance == null) _instance = DrawerMenuController._init();
+    return _instance;
+  }
 
   DrawerMenuController._init();
 

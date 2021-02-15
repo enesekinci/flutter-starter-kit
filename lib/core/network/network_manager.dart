@@ -6,8 +6,10 @@ import '../constants/app/app_constants.dart';
 class NetworkManager {
   Dio _dio;
   static NetworkManager _instance = NetworkManager._init();
-  static NetworkManager get instance => _instance;
-
+  static NetworkManager get instance {
+    if (_instance == null) _instance = NetworkManager._init();
+    return _instance;
+  }
   NetworkManager._init() {
     final _baseOptions = BaseOptions(
       baseUrl: ApplicationConstants.BASE_URL,
