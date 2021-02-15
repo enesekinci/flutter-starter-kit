@@ -12,6 +12,9 @@
 #ios and android
 /ios/
 /android/
+/linux/
+/web/
+/windows/
 
 # IntelliJ related
 *.iml
