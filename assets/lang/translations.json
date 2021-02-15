@@ -1,0 +1,12 @@
+{
+    "en_US": {
+        "app_name": "Test App EN",
+        "version": "0.0.1",
+        "title": "Title"
+    },
+    "tr_TR": {
+        "app_name": "Test App TR",
+        "version": "0.0.1",
+        "title": "Başlık"
+    }
+}
