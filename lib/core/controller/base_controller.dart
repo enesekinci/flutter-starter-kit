@@ -1,7 +1,6 @@
-import 'package:get/get.dart';
+import 'package:get/state_manager.dart';
 
 import '../storage/storage_manager.dart';
-
 
 abstract class BaseController extends GetxController {
   StorageManager box = StorageManager.instance;
